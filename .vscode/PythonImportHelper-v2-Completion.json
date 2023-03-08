@@ -1,0 +1,117 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os.path",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.path",
+        "description": "os.path",
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "OpenCC",
+        "importPath": "opencc",
+        "description": "opencc",
+        "isExtraImport": true,
+        "detail": "opencc",
+        "documentation": {}
+    },
+    {
+        "label": "copyfile",
+        "importPath": "shutil",
+        "description": "shutil",
+        "isExtraImport": true,
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "led_spaces",
+        "kind": 2,
+        "importPath": "evolve.strings.checkStrings",
+        "description": "evolve.strings.checkStrings",
+        "peekOfCode": "def led_spaces(str):\n    return len(str) - len(str.lstrip(' '))\nif len(sys.argv) < 2:\n    print(\"inform locale key (example 'python checkString.py pt-BR')\")\nelse:\n    locale = sys.argv[1]\n    if not path.isfile('strings.{}.json'.format(locale)):\n        print(\"'strings.{}.json' not found. Create it before calling this script.\".format(locale))\n        exit()\n    with open('strings.json', encoding='utf-8') as default_file, \\",
+        "detail": "evolve.strings.checkStrings",
+        "documentation": {}
+    },
+    {
+        "label": "check_tags",
+        "kind": 5,
+        "importPath": "evolve.strings.checkStrings",
+        "description": "evolve.strings.checkStrings",
+        "peekOfCode": "check_tags = True\ncheck_tokens = True\ncheck_leading_space = True\ncheck_periods = True\ncheck_numbers = True\ndef led_spaces(str):\n    return len(str) - len(str.lstrip(' '))\nif len(sys.argv) < 2:\n    print(\"inform locale key (example 'python checkString.py pt-BR')\")\nelse:",
+        "detail": "evolve.strings.checkStrings",
+        "documentation": {}
+    },
+    {
+        "label": "check_tokens",
+        "kind": 5,
+        "importPath": "evolve.strings.checkStrings",
+        "description": "evolve.strings.checkStrings",
+        "peekOfCode": "check_tokens = True\ncheck_leading_space = True\ncheck_periods = True\ncheck_numbers = True\ndef led_spaces(str):\n    return len(str) - len(str.lstrip(' '))\nif len(sys.argv) < 2:\n    print(\"inform locale key (example 'python checkString.py pt-BR')\")\nelse:\n    locale = sys.argv[1]",
+        "detail": "evolve.strings.checkStrings",
+        "documentation": {}
+    },
+    {
+        "label": "check_leading_space",
+        "kind": 5,
+        "importPath": "evolve.strings.checkStrings",
+        "description": "evolve.strings.checkStrings",
+        "peekOfCode": "check_leading_space = True\ncheck_periods = True\ncheck_numbers = True\ndef led_spaces(str):\n    return len(str) - len(str.lstrip(' '))\nif len(sys.argv) < 2:\n    print(\"inform locale key (example 'python checkString.py pt-BR')\")\nelse:\n    locale = sys.argv[1]\n    if not path.isfile('strings.{}.json'.format(locale)):",
+        "detail": "evolve.strings.checkStrings",
+        "documentation": {}
+    },
+    {
+        "label": "check_periods",
+        "kind": 5,
+        "importPath": "evolve.strings.checkStrings",
+        "description": "evolve.strings.checkStrings",
+        "peekOfCode": "check_periods = True\ncheck_numbers = True\ndef led_spaces(str):\n    return len(str) - len(str.lstrip(' '))\nif len(sys.argv) < 2:\n    print(\"inform locale key (example 'python checkString.py pt-BR')\")\nelse:\n    locale = sys.argv[1]\n    if not path.isfile('strings.{}.json'.format(locale)):\n        print(\"'strings.{}.json' not found. Create it before calling this script.\".format(locale))",
+        "detail": "evolve.strings.checkStrings",
+        "documentation": {}
+    },
+    {
+        "label": "check_numbers",
+        "kind": 5,
+        "importPath": "evolve.strings.checkStrings",
+        "description": "evolve.strings.checkStrings",
+        "peekOfCode": "check_numbers = True\ndef led_spaces(str):\n    return len(str) - len(str.lstrip(' '))\nif len(sys.argv) < 2:\n    print(\"inform locale key (example 'python checkString.py pt-BR')\")\nelse:\n    locale = sys.argv[1]\n    if not path.isfile('strings.{}.json'.format(locale)):\n        print(\"'strings.{}.json' not found. Create it before calling this script.\".format(locale))\n        exit()",
+        "detail": "evolve.strings.checkStrings",
+        "documentation": {}
+    },
+    {
+        "label": "zh_TW",
+        "kind": 5,
+        "importPath": "evolve.strings.convert zh-CN to zh-TW using opencc",
+        "description": "evolve.strings.convert zh-CN to zh-TW using opencc",
+        "peekOfCode": "zh_TW = OpenCC('s2tw').convert(zh_CN)\nwith open('strings.zh-TW.json', 'w', encoding='utf-8') as f:\n    f.write(zh_TW)",
+        "detail": "evolve.strings.convert zh-CN to zh-TW using opencc",
+        "documentation": {}
+    }
+]
